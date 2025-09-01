@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import Quagga from 'quagga'
+import Quagga from '@ericblade/quagga2';
 import { AppDispatch } from '@store/store'
 import { closeScanner } from '@store/slices/medicationsSlice'
 import toast from 'react-hot-toast'
