@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { RootState, AppDispatch } from '@store/store'
 import { loadFromStorage as loadMedications } from '@store/slices/medicationsSlice'
 import { loadFromStorage as loadReminders } from '@store/slices/remindersSlice'
-import { MedicationStatus, ReminderType } from '@types/index'
+import { MedicationStatus, ReminderType } from '../../types/index'
 
 const Container = styled.div`
   padding-top: 80px;
@@ -175,38 +175,6 @@ const DashboardScreen: React.FC = () => {
       link: '/reminders',
       color: 'var(--color-reminder)',
       stats: { value: todayReminders.length, label: 'hoje' }
-    },
-    {
-      icon: '💰',
-      title: 'Finanças',
-      description: 'Controle financeiro e orçamentos',
-      link: '/finances',
-      color: 'var(--color-finance)',
-      stats: { value: 0, label: 'contas' }
-    },
-    {
-      icon: '🚌',
-      title: 'Transporte',
-      description: 'Horários e rotas de transporte',
-      link: '/transport',
-      color: 'var(--color-transport)',
-      stats: { value: 0, label: 'favoritas' }
-    },
-    {
-      icon: '🛒',
-      title: 'Compras',
-      description: 'Listas de compras inteligentes',
-      link: '/shopping',
-      color: 'var(--color-shopping)',
-      stats: { value: 0, label: 'listas' }
-    },
-    {
-      icon: '🤖',
-      title: 'Assistente',
-      description: 'IA pessoal para ajudar no dia a dia',
-      link: '/assistant',
-      color: 'var(--color-assistant)',
-      stats: { value: 0, label: 'conversas' }
     },
   ]
 

@@ -135,7 +135,6 @@ const InstructionText = styled.p`
 `
 
 const BarcodeScanner: React.FC = () => {
-  const newCameraPermission = await Camera.requestCameraPermission()
   const dispatch = useDispatch<AppDispatch>()
   const scannerRef = useRef<HTMLDivElement>(null)
 

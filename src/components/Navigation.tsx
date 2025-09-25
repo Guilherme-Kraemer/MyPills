@@ -98,10 +98,6 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath }) => {
     { path: '/dashboard', icon: '🏠', label: 'Dashboard' },
     { path: '/medications', icon: '💊', label: 'Medicamentos' },
     { path: '/reminders', icon: '⏰', label: 'Lembretes' },
-    { path: '/finances', icon: '💰', label: 'Finanças' },
-    { path: '/transport', icon: '🚌', label: 'Transporte' },
-    { path: '/shopping', icon: '🛒', label: 'Compras' },
-    { path: '/assistant', icon: '🤖', label: 'Assistente' },
   ]
 
   return (
