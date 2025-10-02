@@ -6,8 +6,9 @@ import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { AppDispatch } from '@store/store'
 import { addMedication } from '@store/slices/medicationsSlice'
-import { Medication, MedicationStatus } from '@types/index'
 import toast from 'react-hot-toast'
+import type { Medication } from '../../types'
+import { MedicationStatus } from '../../types'
 
 const Container = styled.div`
   padding-top: 80px;
