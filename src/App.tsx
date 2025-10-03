@@ -12,10 +12,6 @@ import LoginScreen from '@features/auth/LoginScreen'
 import DashboardScreen from '@features/dashboard/DashboardScreen'
 import MedicationsScreen from '@features/medications/MedicationsScreen'
 import RemindersScreen from '@features/reminders/RemindersScreen'
-import FinancesScreen from '@features/finances/FinancesScreen'
-import TransportScreen from '@features/transport/TransportScreen'
-import ShoppingScreen from '@features/shopping/ShoppingScreen'
-import AssistantScreen from '@features/assistant/AssistantScreen'
 import SettingsScreen from '@features/settings/SettingsScreen'
 
 // Layout
@@ -51,10 +47,6 @@ function App() {
           <Route path="/dashboard" element={<DashboardScreen />} />
           <Route path="/medications/*" element={<MedicationsScreen />} />
           <Route path="/reminders" element={<RemindersScreen />} />
-          <Route path="/finances" element={<FinancesScreen />} />
-          <Route path="/transport" element={<TransportScreen />} />
-          <Route path="/shopping" element={<ShoppingScreen />} />
-          <Route path="/assistant" element={<AssistantScreen />} />
           <Route path="/settings" element={<SettingsScreen />} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>

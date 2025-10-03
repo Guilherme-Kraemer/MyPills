@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { AppDispatch } from '@store/store'
 import { closeScanner } from '@store/slices/medicationsSlice'
 import toast from 'react-hot-toast'
+import Quagga from '@ericblade/quagga2'
+
 
 
 const ScannerOverlay = styled(motion.div)`
@@ -135,7 +137,6 @@ const InstructionText = styled.p`
 `
 
 const BarcodeScanner: React.FC = () => {
-  const newCameraPermission = await Camera.requestCameraPermission()
   const dispatch = useDispatch<AppDispatch>()
   const scannerRef = useRef<HTMLDivElement>(null)
 
@@ -155,10 +156,7 @@ const BarcodeScanner: React.FC = () => {
       },
       decoder: {
         readers: [
-          "ean_reader",
-          "ean_8_reader",
-          "code_128_reader",
-          "code_39_reader"
+          "ean_reader"
         ]
       },
       locate: true,

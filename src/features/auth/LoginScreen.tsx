@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { AppDispatch } from '@store/store'
 import { loginSuccess } from '@store/slices/authSlice'
-import { User } from '@types/index'
+import type { User } from '../../types/index'
 import toast from 'react-hot-toast'
 
 const LoginContainer = styled.div`
