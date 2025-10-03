@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { RootState, AppDispatch } from '@store/store'
 import { loadFromStorage, completeReminder, addReminder } from '@store/slices/remindersSlice'
-import { Reminder, ReminderType, ReminderPriority } from '@types/index'
+import { Reminder, ReminderType, ReminderPriority } from '../../types/index'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 

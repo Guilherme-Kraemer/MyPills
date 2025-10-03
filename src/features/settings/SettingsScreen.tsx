@@ -103,7 +103,7 @@ const SettingsScreen: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>()
   const { user } = useSelector((state: RootState) => state.auth)
 
-  const handleToggle = (setting: keyof typeof user.preferences) => {
+  const handleToggle = (setting: keyof NonNullable<typeof user>['preferences']) => {
     if (user) {
       dispatch(updateUserPreferences({
         [setting]: !user.preferences[setting]

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Medication, MedicationSchedule, MedicationLog } from '@types/index'
+import { Medication, MedicationSchedule, MedicationLog } from '../../types/index'
 
 export interface MedicationsState {
   medications: Medication[]

@@ -107,26 +107,6 @@ const onboardingSlides = [
     description: 'Scanner de código de barras, lembretes inteligentes e controle de estoque. Nunca mais esqueça de tomar seus remédios.'
   },
   {
-    icon: '💰',
-    title: 'Gestão Financeira',
-    description: 'Controle suas contas, orçamentos e transações. Calculadoras financeiras e relatórios detalhados.'
-  },
-  {
-    icon: '🚌',
-    title: 'Transporte Inteligente',
-    description: 'Horários de ônibus em tempo real, planejamento de rotas e suas paradas favoritas.'
-  },
-  {
-    icon: '🛒',
-    title: 'Lista de Compras',
-    description: 'Listas inteligentes com comparação de preços e otimização de gastos.'
-  },
-  {
-    icon: '🤖',
-    title: 'Assistente IA',
-    description: 'Assistente pessoal com IA offline. Suas informações ficam 100% privadas no seu dispositivo.'
-  },
-  {
     icon: '🔒',
     title: 'Privacidade Total',
     description: 'Todos os dados ficam no seu dispositivo. Sem rastreamento, sem anúncios, sem compartilhamento.'
