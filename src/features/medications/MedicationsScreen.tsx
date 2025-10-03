@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { RootState, AppDispatch } from '@store/store'
 import { loadFromStorage, openScanner, takeMedication } from '@store/slices/medicationsSlice'
-import { Medication, MedicationStatus } from '@types/index'
+import { MedicationStatus } from '../../types'
 import AddMedicationScreen from './AddMedicationScreen'
 import MedicationDetailScreen from './MedicationDetailScreen'
 import BarcodeScanner from './components/BarcodeScanner'
@@ -188,7 +188,7 @@ type TabType = 'all' | 'active' | 'low-stock' | 'expired'
 const MedicationsScreen: React.FC = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch<AppDispatch>()
-  const { medications, isLoading, scannerOpen } = useSelector((state: RootState) => state.medications)
+  const { medications, scannerOpen } = useSelector((state: RootState) => state.medications)
   const [activeTab, setActiveTab] = useState<TabType>('all')
 
   useEffect(() => {

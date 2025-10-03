@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { RootState, AppDispatch } from '@store/store'
 import { deleteMedication, takeMedication } from '@store/slices/medicationsSlice'
-import { MedicationStatus } from '@types/index'
+import { MedicationStatus } from '../../types'
 import toast from 'react-hot-toast'
 
 const Container = styled.div`
